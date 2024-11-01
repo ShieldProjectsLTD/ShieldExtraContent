@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "runes",
+  "key": {
+    "#": {
+      "item": "minecraft:amethyst_block"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "B": {
+      "item": "minecraft:book"
+    }
+  },
+  "pattern": [
+    " # ",
+    "ABA",
+    " D "
+  ],
+  "result": {
+    "count": 1,
+    "id": "shieldextracontent:stone_rewind"
+  }
+}

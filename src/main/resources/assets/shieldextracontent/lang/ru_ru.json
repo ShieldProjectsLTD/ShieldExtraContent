@@ -1,0 +1,24 @@
+{
+  "creativetab.shieldextracontent.wooden_blocks_tab.title": "Деревянные блоки",
+  "creativetab.shieldextracontent.stone_blocks_tab.title": "Каменные блоки",
+  "creativetab.shieldextracontent.nether_blocks_tab.title": "Адские блоки",
+  "creativetab.shieldextracontent.the_end_blocks_tab.title": "Блоки из Энда",
+  "creativetab.shieldextracontent.decorative_blocks_tab.title": "Декоративные блоки",
+
+  "item.shieldextracontent.stone_rewind": "Камень воспоминаний",
+  "item.shieldextracontent.small_coal": "Маленький уголь",
+  "item.shieldextracontent.small_charcoal": "Маленький древесный уголь",
+  "item.shieldextracontent.locked_soul": "Запертая душа",
+  "item.shieldextracontent.unholy_soul": "Нечестивая душа",
+
+  "block.shieldextracontent.acacia_wood_wall": "Acacia Wood Wall",
+
+  "tooltip.shieldextracontent.locked_soul.title": "§8§oЯ чую как эта душа хочет выйти наружу, и выпустить чистый свет.\n\n§fНажмите §e<Ctrl>§f чтобы раскрыть подробности.",
+  "tooltip.shieldextracontent.locked_soul.title_shifted": "§8§oЯ чую как эта душа хочет выйти наружу, и выпустить чистый свет.\n\n§a§lИспользование: §r§aПри нажатии ПКМ, вы выпускаете запертую душу,\nизлучающая яркий свет, который издает достаточное количество света для избежания темноты",
+
+  "tooltip.shieldextracontent.unholy_soul.title": "§8§oВыглядит... ужасающее, такое обилие паразитов я никогда не видел...\n\n§8Нажмите §8<Ctrl>§8 чтобы раскрыть подробности.",
+  "tooltip.shieldextracontent.unholy_soul.title_shifted": "§8§oВыглядит... ужасающее, такое обилие паразитов я никогда не видел...\n\n§8§oРаньше эта душа была святой и наполнено чистым светом.\nТеперь это стало ужасающей безделушкой",
+
+  "tooltip.shieldextracontent.stone_rewind.title": "§8§oБлестяшка! §o*Вы видите как через камень просвечиваются ваши воспоминания*\n\n§fНажмите §e<Ctrl>§f чтобы раскрыть подробности.",
+  "tooltip.shieldextracontent.stone_rewind.title_shifted": "§8§oБлестяшка! §o*Вы видите как через камень просвечиваются ваши воспоминания*\n\n§a§lИспользование ПКМ: §r§aПри нажатии вы переместитесь на точку воспоминания\n\n§a§lИспользование Shift+ПКМ: §r§aПри нажатии, вы сохраните воспоминание в камень"
+}

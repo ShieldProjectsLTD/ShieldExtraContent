@@ -1,0 +1,67 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/world/item/Rarity",
+      "name": "shieldextracontent_legendary",
+      "constructor": "(ILjava/lang/String;Ljava/util/function/UnaryOperator;)V",
+      "parameters": {
+        "class": "net/shieldprojects/shieldextracontent/item/CustomRarity",
+        "field": "LEGENDARY_RARITY"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/item/Rarity",
+      "name": "shieldextracontent_trash",
+      "constructor": "(ILjava/lang/String;Ljava/util/function/UnaryOperator;)V",
+      "parameters": {
+        "class": "net/shieldprojects/shieldextracontent/item/CustomRarity",
+        "field": "TRASH_RARITY"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/item/Rarity",
+      "name": "shieldextracontent_uncommon",
+      "constructor": "(ILjava/lang/String;Ljava/util/function/UnaryOperator;)V",
+      "parameters": {
+        "class": "net/shieldprojects/shieldextracontent/item/CustomRarity",
+        "field": "UNCOMMON_RARITY"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/item/Rarity",
+      "name": "shieldextracontent_rare",
+      "constructor": "(ILjava/lang/String;Ljava/util/function/UnaryOperator;)V",
+      "parameters": {
+        "class": "net/shieldprojects/shieldextracontent/item/CustomRarity",
+        "field": "RARE_RARITY"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/item/Rarity",
+      "name": "shieldextracontent_mythic",
+      "constructor": "(ILjava/lang/String;Ljava/util/function/UnaryOperator;)V",
+      "parameters": {
+        "class": "net/shieldprojects/shieldextracontent/item/CustomRarity",
+        "field": "MYTHIC_RARITY"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/item/Rarity",
+      "name": "shieldextracontent_epic",
+      "constructor": "(ILjava/lang/String;Ljava/util/function/UnaryOperator;)V",
+      "parameters": {
+        "class": "net/shieldprojects/shieldextracontent/item/CustomRarity",
+        "field": "EPIC_RARITY"
+      }
+    },
+    {
+      "enum": "net/minecraft/world/item/Rarity",
+      "name": "shieldextracontent_common",
+      "constructor": "(ILjava/lang/String;Ljava/util/function/UnaryOperator;)V",
+      "parameters": {
+        "class": "net/shieldprojects/shieldextracontent/item/CustomRarity",
+        "field": "COMMON_RARITY"
+      }
+    }
+  ]
+}

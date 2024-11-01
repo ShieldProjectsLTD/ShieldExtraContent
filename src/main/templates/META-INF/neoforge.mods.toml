@@ -17,7 +17,11 @@ license="${mod_license}"
 #issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
 
 # A list of mods - how many allowed here is determined by the individual mod loader
-[[mods]] #mandatory
+# In neoforge.mods.toml:
+[[mods]]
+## The file is relative to the output directory of the resources, or the root path inside the jar when compiled
+## The 'resources' directory represents the root output directory of the resources
+enumExtensions="META-INF/enumextensions.json"
 
 # The modid of the mod
 modId="${mod_id}" #mandatory
