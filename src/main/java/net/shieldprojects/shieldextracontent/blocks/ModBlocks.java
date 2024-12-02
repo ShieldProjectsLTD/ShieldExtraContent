@@ -710,227 +710,227 @@ public class ModBlocks {
 
     public static final DeferredBlock<StairBlock> WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
             () -> new StairBlock(Blocks.WHITE_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> WHITE_CONCRETE_WALL = registerBlock("white_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> WHITE_CONCRETE_PRESSURE_PLATE = registerBlock("white_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> WHITE_CONCRETE_BUTTON = registerBlock("white_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> LIGHT_GRAY_CONCRETE_STAIRS = registerBlock("light_gray_concrete_stairs",
             () -> new StairBlock(Blocks.LIGHT_GRAY_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> LIGHT_GRAY_CONCRETE_SLAB = registerBlock("light_gray_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> LIGHT_GRAY_CONCRETE_WALL = registerBlock("light_gray_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> LIGHT_GRAY_CONCRETE_PRESSURE_PLATE = registerBlock("light_gray_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> LIGHT_GRAY_CONCRETE_BUTTON = registerBlock("light_gray_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> GRAY_CONCRETE_STAIRS = registerBlock("gray_concrete_stairs",
             () -> new StairBlock(Blocks.GRAY_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> GRAY_CONCRETE_SLAB = registerBlock("gray_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> GRAY_CONCRETE_WALL = registerBlock("gray_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> GRAY_CONCRETE_PRESSURE_PLATE = registerBlock("gray_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> GRAY_CONCRETE_BUTTON = registerBlock("gray_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> BLACK_CONCRETE_STAIRS = registerBlock("black_concrete_stairs",
             () -> new StairBlock(Blocks.BLACK_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> BLACK_CONCRETE_SLAB = registerBlock("black_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> BLACK_CONCRETE_WALL = registerBlock("black_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> BLACK_CONCRETE_PRESSURE_PLATE = registerBlock("black_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> BLACK_CONCRETE_BUTTON = registerBlock("black_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> BROWN_CONCRETE_STAIRS = registerBlock("brown_concrete_stairs",
             () -> new StairBlock(Blocks.BROWN_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> BROWN_CONCRETE_SLAB = registerBlock("brown_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> BROWN_CONCRETE_WALL = registerBlock("brown_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> BROWN_CONCRETE_PRESSURE_PLATE = registerBlock("brown_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> BROWN_CONCRETE_BUTTON = registerBlock("brown_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> RED_CONCRETE_STAIRS = registerBlock("red_concrete_stairs",
             () -> new StairBlock(Blocks.RED_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> RED_CONCRETE_SLAB = registerBlock("red_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> RED_CONCRETE_WALL = registerBlock("red_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> RED_CONCRETE_PRESSURE_PLATE = registerBlock("red_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> RED_CONCRETE_BUTTON = registerBlock("red_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> ORANGE_CONCRETE_STAIRS = registerBlock("orange_concrete_stairs",
             () -> new StairBlock(Blocks.ORANGE_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> ORANGE_CONCRETE_SLAB = registerBlock("orange_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> ORANGE_CONCRETE_WALL = registerBlock("orange_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> ORANGE_CONCRETE_PRESSURE_PLATE = registerBlock("orange_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> ORANGE_CONCRETE_BUTTON = registerBlock("orange_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> YELLOW_CONCRETE_STAIRS = registerBlock("yellow_concrete_stairs",
             () -> new StairBlock(Blocks.YELLOW_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> YELLOW_CONCRETE_SLAB = registerBlock("yellow_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> YELLOW_CONCRETE_WALL = registerBlock("yellow_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> YELLOW_CONCRETE_PRESSURE_PLATE = registerBlock("yellow_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> YELLOW_CONCRETE_BUTTON = registerBlock("yellow_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> LIME_CONCRETE_STAIRS = registerBlock("lime_concrete_stairs",
             () -> new StairBlock(Blocks.LIME_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> LIME_CONCRETE_SLAB = registerBlock("lime_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> LIME_CONCRETE_WALL = registerBlock("lime_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> LIME_CONCRETE_PRESSURE_PLATE = registerBlock("lime_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> LIME_CONCRETE_BUTTON = registerBlock("lime_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> GREEN_CONCRETE_STAIRS = registerBlock("green_concrete_stairs",
             () -> new StairBlock(Blocks.GREEN_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> GREEN_CONCRETE_SLAB = registerBlock("green_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> GREEN_CONCRETE_WALL = registerBlock("green_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> GREEN_CONCRETE_PRESSURE_PLATE = registerBlock("green_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> GREEN_CONCRETE_BUTTON = registerBlock("green_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> CYAN_CONCRETE_STAIRS = registerBlock("cyan_concrete_stairs",
             () -> new StairBlock(Blocks.CYAN_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> CYAN_CONCRETE_SLAB = registerBlock("cyan_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> CYAN_CONCRETE_WALL = registerBlock("cyan_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> CYAN_CONCRETE_PRESSURE_PLATE = registerBlock("cyan_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> CYAN_CONCRETE_BUTTON = registerBlock("cyan_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> LIGHT_BLUE_CONCRETE_STAIRS = registerBlock("light_blue_concrete_stairs",
             () -> new StairBlock(Blocks.LIGHT_BLUE_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> LIGHT_BLUE_CONCRETE_SLAB = registerBlock("light_blue_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> LIGHT_BLUE_CONCRETE_WALL = registerBlock("light_blue_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> LIGHT_BLUE_CONCRETE_PRESSURE_PLATE = registerBlock("light_blue_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> LIGHT_BLUE_CONCRETE_BUTTON = registerBlock("light_blue_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> BLUE_CONCRETE_STAIRS = registerBlock("blue_concrete_stairs",
             () -> new StairBlock(Blocks.BLUE_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> BLUE_CONCRETE_SLAB = registerBlock("blue_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> BLUE_CONCRETE_WALL = registerBlock("blue_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> BLUE_CONCRETE_PRESSURE_PLATE = registerBlock("blue_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> BLUE_CONCRETE_BUTTON = registerBlock("blue_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> PURPLE_CONCRETE_STAIRS = registerBlock("purple_concrete_stairs",
             () -> new StairBlock(Blocks.PURPLE_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> PURPLE_CONCRETE_SLAB = registerBlock("purple_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> PURPLE_CONCRETE_WALL = registerBlock("purple_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> PURPLE_CONCRETE_PRESSURE_PLATE = registerBlock("purple_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> PURPLE_CONCRETE_BUTTON = registerBlock("purple_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> MAGENTA_CONCRETE_STAIRS = registerBlock("magenta_concrete_stairs",
             () -> new StairBlock(Blocks.MAGENTA_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> MAGENTA_CONCRETE_SLAB = registerBlock("magenta_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> MAGENTA_CONCRETE_WALL = registerBlock("magenta_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> MAGENTA_CONCRETE_PRESSURE_PLATE = registerBlock("magenta_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> MAGENTA_CONCRETE_BUTTON = registerBlock("magenta_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
     public static final DeferredBlock<StairBlock> PINK_CONCRETE_STAIRS = registerBlock("pink_concrete_stairs",
             () -> new StairBlock(Blocks.PINK_CONCRETE.defaultBlockState(),
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<SlabBlock> PINK_CONCRETE_SLAB = registerBlock("pink_concrete_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<WallBlock> PINK_CONCRETE_WALL = registerBlock("pink_concrete_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<PressurePlateBlock> PINK_CONCRETE_PRESSURE_PLATE = registerBlock("pink_concrete_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.STONE,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops()));
     public static final DeferredBlock<ButtonBlock> PINK_CONCRETE_BUTTON = registerBlock("pink_concrete_button",
             () -> new ButtonBlock(BlockSetType.STONE, 20,
-                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+                    BlockBehaviour.Properties.of().strength(1.8f).requiresCorrectToolForDrops().noCollission()));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

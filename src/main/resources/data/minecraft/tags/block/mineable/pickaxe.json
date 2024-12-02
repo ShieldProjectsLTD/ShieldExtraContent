@@ -1,0 +1,100 @@
+{
+  "replace": false,
+  "values": [
+    "shieldextracontent:white_concrete_stairs",
+    "shieldextracontent:white_concrete_slab",
+    "shieldextracontent:white_concrete_wall",
+    "shieldextracontent:white_concrete_pressure_plate",
+    "shieldextracontent:white_concrete_button",
+
+    "shieldextracontent:light_gray_concrete_stairs",
+    "shieldextracontent:light_gray_concrete_slab",
+    "shieldextracontent:light_gray_concrete_wall",
+    "shieldextracontent:light_gray_concrete_pressure_plate",
+    "shieldextracontent:light_gray_concrete_button",
+
+    "shieldextracontent:gray_concrete_stairs",
+    "shieldextracontent:gray_concrete_slab",
+    "shieldextracontent:gray_concrete_wall",
+    "shieldextracontent:gray_concrete_pressure_plate",
+    "shieldextracontent:gray_concrete_button",
+
+    "shieldextracontent:black_concrete_stairs",
+    "shieldextracontent:black_concrete_slab",
+    "shieldextracontent:black_concrete_wall",
+    "shieldextracontent:black_concrete_pressure_plate",
+    "shieldextracontent:black_concrete_button",
+
+    "shieldextracontent:brown_concrete_stairs",
+    "shieldextracontent:brown_concrete_slab",
+    "shieldextracontent:brown_concrete_wall",
+    "shieldextracontent:brown_concrete_pressure_plate",
+    "shieldextracontent:brown_concrete_button"
+  ,
+    "shieldextracontent:red_concrete_stairs",
+    "shieldextracontent:red_concrete_slab",
+    "shieldextracontent:red_concrete_wall",
+    "shieldextracontent:red_concrete_pressure_plate",
+    "shieldextracontent:red_concrete_button",
+
+    "shieldextracontent:orange_concrete_stairs",
+    "shieldextracontent:orange_concrete_slab",
+    "shieldextracontent:orange_concrete_wall",
+    "shieldextracontent:orange_concrete_pressure_plate",
+    "shieldextracontent:orange_concrete_button",
+
+    "shieldextracontent:yellow_concrete_stairs",
+    "shieldextracontent:yellow_concrete_slab",
+    "shieldextracontent:yellow_concrete_wall",
+    "shieldextracontent:yellow_concrete_pressure_plate",
+    "shieldextracontent:yellow_concrete_button",
+
+    "shieldextracontent:lime_concrete_stairs",
+    "shieldextracontent:lime_concrete_slab",
+    "shieldextracontent:lime_concrete_wall",
+    "shieldextracontent:lime_concrete_pressure_plate",
+    "shieldextracontent:lime_concrete_button",
+
+    "shieldextracontent:green_concrete_stairs",
+    "shieldextracontent:green_concrete_slab",
+    "shieldextracontent:green_concrete_wall",
+    "shieldextracontent:green_concrete_pressure_plate",
+    "shieldextracontent:green_concrete_button",
+
+    "shieldextracontent:cyan_concrete_stairs",
+    "shieldextracontent:cyan_concrete_slab",
+    "shieldextracontent:cyan_concrete_wall",
+    "shieldextracontent:cyan_concrete_pressure_plate",
+    "shieldextracontent:cyan_concrete_button",
+
+    "shieldextracontent:light_blue_concrete_stairs",
+    "shieldextracontent:light_blue_concrete_slab",
+    "shieldextracontent:light_blue_concrete_wall",
+    "shieldextracontent:light_blue_concrete_pressure_plate",
+    "shieldextracontent:light_blue_concrete_button",
+
+    "shieldextracontent:blue_concrete_stairs",
+    "shieldextracontent:blue_concrete_slab",
+    "shieldextracontent:blue_concrete_wall",
+    "shieldextracontent:blue_concrete_pressure_plate",
+    "shieldextracontent:blue_concrete_button",
+
+    "shieldextracontent:purple_concrete_stairs",
+    "shieldextracontent:purple_concrete_slab",
+    "shieldextracontent:purple_concrete_wall",
+    "shieldextracontent:purple_concrete_pressure_plate",
+    "shieldextracontent:purple_concrete_button",
+
+    "shieldextracontent:magenta_concrete_stairs",
+    "shieldextracontent:magenta_concrete_slab",
+    "shieldextracontent:magenta_concrete_wall",
+    "shieldextracontent:magenta_concrete_pressure_plate",
+    "shieldextracontent:magenta_concrete_button",
+
+    "shieldextracontent:pink_concrete_stairs",
+    "shieldextracontent:pink_concrete_slab",
+    "shieldextracontent:pink_concrete_wall",
+    "shieldextracontent:pink_concrete_pressure_plate",
+    "shieldextracontent:pink_concrete_button"
+  ]
+}
