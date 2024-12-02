@@ -1,12 +1,6 @@
 package net.shieldprojects.shieldextracontent;
 
 import net.shieldprojects.shieldextracontent.blocks.ModBlocks;
-import net.shieldprojects.shieldextracontent.component.ModDataComponents;
-import net.shieldprojects.shieldextracontent.item.ModCreativeTabs;
-import net.shieldprojects.shieldextracontent.item.ModItems;
-import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -19,22 +13,18 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.shieldprojects.shieldextracontent.item.ModItems;
 
 @Mod(ShieldExtraContentMod.MOD_ID)
-public class ShieldExtraContentMod {
+public final class ShieldExtraContentMod {
     public static final String MOD_ID = "shieldextracontent";
-    private static final Logger LOGGER = LogUtils.getLogger();
-
-
 
     public ShieldExtraContentMod(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
-        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModCreativeTabs.register(modEventBus);
-        ModDataComponents.register(modEventBus);
+        ModItems.register(modEventBus);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
