@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "shieldextracontent:block/dark_oak_stripped_log_pressure_plate"
+    },
+    "powered=true": {
+      "model": "shieldextracontent:block/dark_oak_stripped_log_pressure_plate_down"
+    }
+  }
+}

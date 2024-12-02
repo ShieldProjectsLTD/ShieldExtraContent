@@ -18,6 +18,118 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        dropSelf(ModBlocks.WHITE_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.WHITE_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.WHITE_CONCRETE_WALL.get());
+        add(ModBlocks.WHITE_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.WHITE_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get());
+        add(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.GRAY_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.GRAY_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.GRAY_CONCRETE_WALL.get());
+        add(ModBlocks.GRAY_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.GRAY_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.BLACK_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.BLACK_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.BLACK_CONCRETE_WALL.get());
+        add(ModBlocks.BLACK_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.BLACK_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.BROWN_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.BROWN_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.BROWN_CONCRETE_WALL.get());
+        add(ModBlocks.BROWN_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.BROWN_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.RED_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.RED_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.RED_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.RED_CONCRETE_WALL.get());
+        add(ModBlocks.RED_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.RED_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.ORANGE_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.ORANGE_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.ORANGE_CONCRETE_WALL.get());
+        add(ModBlocks.ORANGE_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.ORANGE_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.YELLOW_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.YELLOW_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.YELLOW_CONCRETE_WALL.get());
+        add(ModBlocks.YELLOW_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.YELLOW_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.LIME_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.LIME_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.LIME_CONCRETE_WALL.get());
+        add(ModBlocks.LIME_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LIME_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.GREEN_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.GREEN_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.GREEN_CONCRETE_WALL.get());
+        add(ModBlocks.GREEN_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.GREEN_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.CYAN_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.CYAN_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.CYAN_CONCRETE_WALL.get());
+        add(ModBlocks.CYAN_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CYAN_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get());
+        add(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.BLUE_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.BLUE_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.BLUE_CONCRETE_WALL.get());
+        add(ModBlocks.BLUE_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.BLUE_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.PURPLE_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.PURPLE_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.PURPLE_CONCRETE_WALL.get());
+        add(ModBlocks.PURPLE_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PURPLE_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.MAGENTA_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.MAGENTA_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.MAGENTA_CONCRETE_WALL.get());
+        add(ModBlocks.MAGENTA_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.MAGENTA_CONCRETE_SLAB.get()));
+
+        dropSelf(ModBlocks.PINK_CONCRETE_STAIRS.get());
+        dropSelf(ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.PINK_CONCRETE_BUTTON.get());
+        dropSelf(ModBlocks.PINK_CONCRETE_WALL.get());
+        add(ModBlocks.PINK_CONCRETE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.PINK_CONCRETE_SLAB.get()));
+
         dropSelf(ModBlocks.OAK_WOOD_STAIRS.get());
         dropSelf(ModBlocks.OAK_STRIPPED_WOOD_STAIRS.get());
         dropSelf(ModBlocks.OAK_LOG_STAIRS.get());

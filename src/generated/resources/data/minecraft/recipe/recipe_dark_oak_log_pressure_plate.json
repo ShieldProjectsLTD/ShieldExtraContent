@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "minecraft:dark_oak_log"
+    }
+  },
+  "pattern": [
+    "XX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "shieldextracontent:dark_oak_log_pressure_plate"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "shieldextracontent:block/warped_stripped_stem_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/stripped_warped_stem"
+    },
+    "type=top": {
+      "model": "shieldextracontent:block/warped_stripped_stem_slab_top"
+    }
+  }
+}

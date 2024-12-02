@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "minecraft:stripped_warped_hyphae"
+    }
+  },
+  "pattern": [
+    "XX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "shieldextracontent:warped_stripped_hyphae_pressure_plate"
+  }
+}

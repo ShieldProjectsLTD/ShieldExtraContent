@@ -29,6 +29,108 @@ public class MinecraftCreativeTabs {
             BuildingBlocksCrimson(event);
             BuildingBlocksWarped(event);
         }
+
+        if(tab.equals(CreativeModeTabs.COLORED_BLOCKS)) {
+            BuildingBlocksConcrete(event);
+        }
+    }
+
+    private static void BuildingBlocksConcrete(final BuildCreativeModeTabContentsEvent event) {
+        event.insertAfter(Items.WHITE_CONCRETE.getDefaultInstance(), ModBlocks.WHITE_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.WHITE_CONCRETE_STAIRS.toStack(), ModBlocks.WHITE_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.WHITE_CONCRETE_SLAB.toStack(), ModBlocks.WHITE_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.WHITE_CONCRETE_WALL.toStack(), ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.WHITE_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.LIGHT_GRAY_CONCRETE.getDefaultInstance(), ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.toStack(), ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.toStack(), ModBlocks.LIGHT_GRAY_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.toStack(), ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.GRAY_CONCRETE.getDefaultInstance(), ModBlocks.GRAY_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.GRAY_CONCRETE_STAIRS.toStack(), ModBlocks.GRAY_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.GRAY_CONCRETE_SLAB.toStack(), ModBlocks.GRAY_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.GRAY_CONCRETE_WALL.toStack(), ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.GRAY_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.BLACK_CONCRETE.getDefaultInstance(), ModBlocks.BLACK_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BLACK_CONCRETE_STAIRS.toStack(), ModBlocks.BLACK_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BLACK_CONCRETE_SLAB.toStack(), ModBlocks.BLACK_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BLACK_CONCRETE_WALL.toStack(), ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.BLACK_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.BROWN_CONCRETE.getDefaultInstance(), ModBlocks.BROWN_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BROWN_CONCRETE_STAIRS.toStack(), ModBlocks.BROWN_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BROWN_CONCRETE_SLAB.toStack(), ModBlocks.BROWN_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BROWN_CONCRETE_WALL.toStack(), ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.BROWN_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.RED_CONCRETE.getDefaultInstance(), ModBlocks.RED_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.RED_CONCRETE_STAIRS.toStack(), ModBlocks.RED_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.RED_CONCRETE_SLAB.toStack(), ModBlocks.RED_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.RED_CONCRETE_WALL.toStack(), ModBlocks.RED_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.RED_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.RED_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.ORANGE_CONCRETE.getDefaultInstance(), ModBlocks.ORANGE_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.ORANGE_CONCRETE_STAIRS.toStack(), ModBlocks.ORANGE_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.ORANGE_CONCRETE_SLAB.toStack(), ModBlocks.ORANGE_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.ORANGE_CONCRETE_WALL.toStack(), ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.ORANGE_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.YELLOW_CONCRETE.getDefaultInstance(), ModBlocks.YELLOW_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.YELLOW_CONCRETE_STAIRS.toStack(), ModBlocks.YELLOW_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.YELLOW_CONCRETE_SLAB.toStack(), ModBlocks.YELLOW_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.YELLOW_CONCRETE_WALL.toStack(), ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.YELLOW_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.LIME_CONCRETE.getDefaultInstance(), ModBlocks.LIME_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIME_CONCRETE_STAIRS.toStack(), ModBlocks.LIME_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIME_CONCRETE_SLAB.toStack(), ModBlocks.LIME_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIME_CONCRETE_WALL.toStack(), ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.LIME_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.GREEN_CONCRETE.getDefaultInstance(), ModBlocks.GREEN_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.GREEN_CONCRETE_STAIRS.toStack(), ModBlocks.GREEN_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.GREEN_CONCRETE_SLAB.toStack(), ModBlocks.GREEN_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.GREEN_CONCRETE_WALL.toStack(), ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.GREEN_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.CYAN_CONCRETE.getDefaultInstance(), ModBlocks.CYAN_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.CYAN_CONCRETE_STAIRS.toStack(), ModBlocks.CYAN_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.CYAN_CONCRETE_SLAB.toStack(), ModBlocks.CYAN_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.CYAN_CONCRETE_WALL.toStack(), ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.CYAN_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.LIGHT_BLUE_CONCRETE.getDefaultInstance(), ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.toStack(), ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.toStack(), ModBlocks.LIGHT_BLUE_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_WALL.toStack(), ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.BLUE_CONCRETE.getDefaultInstance(), ModBlocks.BLUE_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BLUE_CONCRETE_STAIRS.toStack(), ModBlocks.BLUE_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BLUE_CONCRETE_SLAB.toStack(), ModBlocks.BLUE_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BLUE_CONCRETE_WALL.toStack(), ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.BLUE_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.PURPLE_CONCRETE.getDefaultInstance(), ModBlocks.PURPLE_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.PURPLE_CONCRETE_STAIRS.toStack(), ModBlocks.PURPLE_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.PURPLE_CONCRETE_SLAB.toStack(), ModBlocks.PURPLE_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.PURPLE_CONCRETE_WALL.toStack(), ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.PURPLE_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.MAGENTA_CONCRETE.getDefaultInstance(), ModBlocks.MAGENTA_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.MAGENTA_CONCRETE_STAIRS.toStack(), ModBlocks.MAGENTA_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.MAGENTA_CONCRETE_SLAB.toStack(), ModBlocks.MAGENTA_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.MAGENTA_CONCRETE_WALL.toStack(), ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.MAGENTA_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+        event.insertAfter(Items.PINK_CONCRETE.getDefaultInstance(), ModBlocks.PINK_CONCRETE_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.PINK_CONCRETE_STAIRS.toStack(), ModBlocks.PINK_CONCRETE_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.PINK_CONCRETE_SLAB.toStack(), ModBlocks.PINK_CONCRETE_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.PINK_CONCRETE_WALL.toStack(), ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        event.insertAfter(ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.toStack(), ModBlocks.PINK_CONCRETE_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
     }
 
     private static void BuildingBlocksOak(final BuildCreativeModeTabContentsEvent event) {

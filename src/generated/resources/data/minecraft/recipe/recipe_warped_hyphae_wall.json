@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "minecraft:warped_hyphae"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " Y ",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "id": "shieldextracontent:warped_hyphae_wall"
+  }
+}

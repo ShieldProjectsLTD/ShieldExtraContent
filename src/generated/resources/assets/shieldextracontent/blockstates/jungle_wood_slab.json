@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "shieldextracontent:block/jungle_wood_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/jungle_log"
+    },
+    "type=top": {
+      "model": "shieldextracontent:block/jungle_wood_slab_top"
+    }
+  }
+}

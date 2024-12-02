@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " Y ",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "id": "shieldextracontent:dark_oak_plank_wall"
+  }
+}

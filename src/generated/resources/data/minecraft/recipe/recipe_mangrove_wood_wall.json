@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "minecraft:mangrove_wood"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " Y ",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "id": "shieldextracontent:mangrove_wood_wall"
+  }
+}

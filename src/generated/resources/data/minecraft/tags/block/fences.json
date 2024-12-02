@@ -1,0 +1,24 @@
+{
+  "values": [
+    "shieldextracontent:oak_wood_fence",
+    "shieldextracontent:oak_stripped_wood_fence",
+    "shieldextracontent:spruce_wood_fence",
+    "shieldextracontent:spruce_stripped_wood_fence",
+    "shieldextracontent:birch_wood_fence",
+    "shieldextracontent:birch_stripped_wood_fence",
+    "shieldextracontent:jungle_wood_fence",
+    "shieldextracontent:jungle_stripped_wood_fence",
+    "shieldextracontent:acacia_wood_fence",
+    "shieldextracontent:acacia_stripped_wood_fence",
+    "shieldextracontent:dark_oak_wood_fence",
+    "shieldextracontent:dark_oak_stripped_wood_fence",
+    "shieldextracontent:mangrove_wood_fence",
+    "shieldextracontent:mangrove_stripped_wood_fence",
+    "shieldextracontent:cherry_wood_fence",
+    "shieldextracontent:cherry_stripped_wood_fence",
+    "shieldextracontent:crimson_hyphae_fence",
+    "shieldextracontent:crimson_stripped_hyphae_fence",
+    "shieldextracontent:warped_hyphae_fence",
+    "shieldextracontent:warped_stripped_hyphae_fence"
+  ]
+}

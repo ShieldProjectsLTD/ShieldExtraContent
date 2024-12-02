@@ -20,6 +20,57 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        buttonItem(ModBlocks.WHITE_CONCRETE_BUTTON, Blocks.WHITE_CONCRETE);
+        wallItem(ModBlocks.WHITE_CONCRETE_WALL, Blocks.WHITE_CONCRETE);
+
+        buttonItem(ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON, Blocks.LIGHT_GRAY_CONCRETE);
+        wallItem(ModBlocks.LIGHT_GRAY_CONCRETE_WALL, Blocks.LIGHT_GRAY_CONCRETE);
+
+        buttonItem(ModBlocks.GRAY_CONCRETE_BUTTON, Blocks.GRAY_CONCRETE);
+        wallItem(ModBlocks.GRAY_CONCRETE_WALL, Blocks.GRAY_CONCRETE);
+
+        buttonItem(ModBlocks.BLACK_CONCRETE_BUTTON, Blocks.BLACK_CONCRETE);
+        wallItem(ModBlocks.BLACK_CONCRETE_WALL, Blocks.BLACK_CONCRETE);
+
+        buttonItem(ModBlocks.BROWN_CONCRETE_BUTTON, Blocks.BROWN_CONCRETE);
+        wallItem(ModBlocks.BROWN_CONCRETE_WALL, Blocks.BROWN_CONCRETE);
+
+        buttonItem(ModBlocks.RED_CONCRETE_BUTTON, Blocks.RED_CONCRETE);
+        wallItem(ModBlocks.RED_CONCRETE_WALL, Blocks.RED_CONCRETE);
+
+        buttonItem(ModBlocks.ORANGE_CONCRETE_BUTTON, Blocks.ORANGE_CONCRETE);
+        wallItem(ModBlocks.ORANGE_CONCRETE_WALL, Blocks.ORANGE_CONCRETE);
+
+        buttonItem(ModBlocks.YELLOW_CONCRETE_BUTTON, Blocks.YELLOW_CONCRETE);
+        wallItem(ModBlocks.YELLOW_CONCRETE_WALL, Blocks.YELLOW_CONCRETE);
+
+        buttonItem(ModBlocks.LIME_CONCRETE_BUTTON, Blocks.LIME_CONCRETE);
+        wallItem(ModBlocks.LIME_CONCRETE_WALL, Blocks.LIME_CONCRETE);
+
+        buttonItem(ModBlocks.GREEN_CONCRETE_BUTTON, Blocks.GREEN_CONCRETE);
+        wallItem(ModBlocks.GREEN_CONCRETE_WALL, Blocks.GREEN_CONCRETE);
+
+        buttonItem(ModBlocks.CYAN_CONCRETE_BUTTON, Blocks.CYAN_CONCRETE);
+        wallItem(ModBlocks.CYAN_CONCRETE_WALL, Blocks.CYAN_CONCRETE);
+
+        buttonItem(ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON, Blocks.LIGHT_BLUE_CONCRETE);
+        wallItem(ModBlocks.LIGHT_BLUE_CONCRETE_WALL, Blocks.LIGHT_BLUE_CONCRETE);
+
+        buttonItem(ModBlocks.BLUE_CONCRETE_BUTTON, Blocks.BLUE_CONCRETE);
+        wallItem(ModBlocks.BLUE_CONCRETE_WALL, Blocks.BLUE_CONCRETE);
+
+        buttonItem(ModBlocks.PURPLE_CONCRETE_BUTTON, Blocks.PURPLE_CONCRETE);
+        wallItem(ModBlocks.PURPLE_CONCRETE_WALL, Blocks.PURPLE_CONCRETE);
+
+        buttonItem(ModBlocks.MAGENTA_CONCRETE_BUTTON, Blocks.MAGENTA_CONCRETE);
+        wallItem(ModBlocks.MAGENTA_CONCRETE_WALL, Blocks.MAGENTA_CONCRETE);
+
+        buttonItem(ModBlocks.PINK_CONCRETE_BUTTON, Blocks.PINK_CONCRETE);
+        wallItem(ModBlocks.PINK_CONCRETE_WALL, Blocks.PINK_CONCRETE);
+
+        //
+        //
+
         buttonItem(ModBlocks.OAK_WOOD_BUTTON, Blocks.OAK_WOOD);
         buttonItem(ModBlocks.OAK_STRIPPED_WOOD_BUTTON, Blocks.STRIPPED_OAK_WOOD);
         buttonItem(ModBlocks.OAK_LOG_BUTTON, Blocks.OAK_LOG);

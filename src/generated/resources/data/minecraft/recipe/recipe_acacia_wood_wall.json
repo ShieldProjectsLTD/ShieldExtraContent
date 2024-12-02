@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "minecraft:acacia_wood"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " Y ",
+    "XXX",
+    "XXX"
+  ],
+  "result": {
+    "count": 6,
+    "id": "shieldextracontent:acacia_wood_wall"
+  }
+}

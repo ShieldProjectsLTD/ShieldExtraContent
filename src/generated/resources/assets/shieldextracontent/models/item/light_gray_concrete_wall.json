@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "shieldextracontent:block/light_gray_concrete"
+  }
+}

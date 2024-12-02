@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "X": {
+      "item": "minecraft:stripped_mangrove_wood"
+    },
+    "Y": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "XYX",
+    "XYX"
+  ],
+  "result": {
+    "count": 3,
+    "id": "shieldextracontent:mangrove_stripped_wood_fence"
+  }
+}

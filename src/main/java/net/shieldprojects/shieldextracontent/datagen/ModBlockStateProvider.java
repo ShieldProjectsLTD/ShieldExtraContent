@@ -28,6 +28,24 @@ public class ModBlockStateProvider extends BlockStateProvider {
         warpedBlocks();
         crimsonBlocks();
 //        bambooBlocks();
+
+        whiteConcreteBlocks();
+        lightGrayConcreteBlocks();
+        grayConcreteBlocks();
+        blackConcreteBlocks();
+        brownConcreteBlocks();
+        redConcreteBlocks();
+        orangeConcreteBlocks();
+        yellowConcreteBlocks();
+        limeConcreteBlocks();
+        greenConcreteBlocks();
+        cyanConcreteBlocks();
+        lightBlueConcreteBlocks();
+        blueConcreteBlocks();
+        purpleConcreteBlocks();
+        magentaConcreteBlocks();
+        pinkConcreteBlocks();
+
     }
 
     private void blockWithItem(@NotNull DeferredBlock<?> deferredBlock) {
@@ -40,6 +58,198 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockItem(@NotNull DeferredBlock<?> deferredBlock, String appendix) {
         simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("shieldextracontent:block/" + deferredBlock.getId().getPath() + appendix));
+    }
+
+    private void whiteConcreteBlocks() {
+        stairsBlock(ModBlocks.WHITE_CONCRETE_STAIRS.get(), blockTexture(Blocks.WHITE_CONCRETE));
+        slabBlock(ModBlocks.WHITE_CONCRETE_SLAB.get(), blockTexture(Blocks.WHITE_CONCRETE), blockTexture(Blocks.WHITE_CONCRETE));
+        pressurePlateBlock(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/white_concrete"));
+        buttonBlock(ModBlocks.WHITE_CONCRETE_BUTTON.get(), mcLoc("block/white_concrete"));
+        wallBlock(ModBlocks.WHITE_CONCRETE_WALL.get(), blockTexture(Blocks.WHITE_CONCRETE));
+
+        blockItem(ModBlocks.WHITE_CONCRETE_STAIRS);
+        blockItem(ModBlocks.WHITE_CONCRETE_SLAB);
+        blockItem(ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void lightGrayConcreteBlocks() {
+        stairsBlock(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS.get(), blockTexture(Blocks.LIGHT_GRAY_CONCRETE));
+        slabBlock(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB.get(), blockTexture(Blocks.LIGHT_GRAY_CONCRETE), blockTexture(Blocks.LIGHT_GRAY_CONCRETE));
+        pressurePlateBlock(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/light_gray_concrete"));
+        buttonBlock(ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON.get(), mcLoc("block/light_gray_concrete"));
+        wallBlock(ModBlocks.LIGHT_GRAY_CONCRETE_WALL.get(), blockTexture(Blocks.LIGHT_GRAY_CONCRETE));
+
+        blockItem(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
+        blockItem(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB);
+        blockItem(ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void grayConcreteBlocks() {
+        stairsBlock(ModBlocks.GRAY_CONCRETE_STAIRS.get(), blockTexture(Blocks.GRAY_CONCRETE));
+        slabBlock(ModBlocks.GRAY_CONCRETE_SLAB.get(), blockTexture(Blocks.GRAY_CONCRETE), blockTexture(Blocks.GRAY_CONCRETE));
+        pressurePlateBlock(ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/gray_concrete"));
+        buttonBlock(ModBlocks.GRAY_CONCRETE_BUTTON.get(), mcLoc("block/gray_concrete"));
+        wallBlock(ModBlocks.GRAY_CONCRETE_WALL.get(), blockTexture(Blocks.GRAY_CONCRETE));
+
+        blockItem(ModBlocks.GRAY_CONCRETE_STAIRS);
+        blockItem(ModBlocks.GRAY_CONCRETE_SLAB);
+        blockItem(ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void blackConcreteBlocks() {
+        stairsBlock(ModBlocks.BLACK_CONCRETE_STAIRS.get(), blockTexture(Blocks.BLACK_CONCRETE));
+        slabBlock(ModBlocks.BLACK_CONCRETE_SLAB.get(), blockTexture(Blocks.BLACK_CONCRETE), blockTexture(Blocks.BLACK_CONCRETE));
+        pressurePlateBlock(ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/black_concrete"));
+        buttonBlock(ModBlocks.BLACK_CONCRETE_BUTTON.get(), mcLoc("block/black_concrete"));
+        wallBlock(ModBlocks.BLACK_CONCRETE_WALL.get(), blockTexture(Blocks.BLACK_CONCRETE));
+
+        blockItem(ModBlocks.BLACK_CONCRETE_STAIRS);
+        blockItem(ModBlocks.BLACK_CONCRETE_SLAB);
+        blockItem(ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void brownConcreteBlocks() {
+        stairsBlock(ModBlocks.BROWN_CONCRETE_STAIRS.get(), blockTexture(Blocks.BROWN_CONCRETE));
+        slabBlock(ModBlocks.BROWN_CONCRETE_SLAB.get(), blockTexture(Blocks.BROWN_CONCRETE), blockTexture(Blocks.BROWN_CONCRETE));
+        pressurePlateBlock(ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/brown_concrete"));
+        buttonBlock(ModBlocks.BROWN_CONCRETE_BUTTON.get(), mcLoc("block/brown_concrete"));
+        wallBlock(ModBlocks.BROWN_CONCRETE_WALL.get(), blockTexture(Blocks.BROWN_CONCRETE));
+
+        blockItem(ModBlocks.BROWN_CONCRETE_STAIRS);
+        blockItem(ModBlocks.BROWN_CONCRETE_SLAB);
+        blockItem(ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void redConcreteBlocks() {
+        stairsBlock(ModBlocks.RED_CONCRETE_STAIRS.get(), blockTexture(Blocks.RED_CONCRETE));
+        slabBlock(ModBlocks.RED_CONCRETE_SLAB.get(), blockTexture(Blocks.RED_CONCRETE), blockTexture(Blocks.RED_CONCRETE));
+        pressurePlateBlock(ModBlocks.RED_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/red_concrete"));
+        buttonBlock(ModBlocks.RED_CONCRETE_BUTTON.get(), mcLoc("block/red_concrete"));
+        wallBlock(ModBlocks.RED_CONCRETE_WALL.get(), blockTexture(Blocks.RED_CONCRETE));
+
+        blockItem(ModBlocks.RED_CONCRETE_STAIRS);
+        blockItem(ModBlocks.RED_CONCRETE_SLAB);
+        blockItem(ModBlocks.RED_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void orangeConcreteBlocks() {
+        stairsBlock(ModBlocks.ORANGE_CONCRETE_STAIRS.get(), blockTexture(Blocks.ORANGE_CONCRETE));
+        slabBlock(ModBlocks.ORANGE_CONCRETE_SLAB.get(), blockTexture(Blocks.ORANGE_CONCRETE), blockTexture(Blocks.ORANGE_CONCRETE));
+        pressurePlateBlock(ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/orange_concrete"));
+        buttonBlock(ModBlocks.ORANGE_CONCRETE_BUTTON.get(), mcLoc("block/orange_concrete"));
+        wallBlock(ModBlocks.ORANGE_CONCRETE_WALL.get(), blockTexture(Blocks.ORANGE_CONCRETE));
+
+        blockItem(ModBlocks.ORANGE_CONCRETE_STAIRS);
+        blockItem(ModBlocks.ORANGE_CONCRETE_SLAB);
+        blockItem(ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void yellowConcreteBlocks() {
+        stairsBlock(ModBlocks.YELLOW_CONCRETE_STAIRS.get(), blockTexture(Blocks.YELLOW_CONCRETE));
+        slabBlock(ModBlocks.YELLOW_CONCRETE_SLAB.get(), blockTexture(Blocks.YELLOW_CONCRETE), blockTexture(Blocks.YELLOW_CONCRETE));
+        pressurePlateBlock(ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/yellow_concrete"));
+        buttonBlock(ModBlocks.YELLOW_CONCRETE_BUTTON.get(), mcLoc("block/yellow_concrete"));
+        wallBlock(ModBlocks.YELLOW_CONCRETE_WALL.get(), blockTexture(Blocks.YELLOW_CONCRETE));
+
+        blockItem(ModBlocks.YELLOW_CONCRETE_STAIRS);
+        blockItem(ModBlocks.YELLOW_CONCRETE_SLAB);
+        blockItem(ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void limeConcreteBlocks() {
+        stairsBlock(ModBlocks.LIME_CONCRETE_STAIRS.get(), blockTexture(Blocks.LIME_CONCRETE));
+        slabBlock(ModBlocks.LIME_CONCRETE_SLAB.get(), blockTexture(Blocks.LIME_CONCRETE), blockTexture(Blocks.LIME_CONCRETE));
+        pressurePlateBlock(ModBlocks.LIME_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/lime_concrete"));
+        buttonBlock(ModBlocks.LIME_CONCRETE_BUTTON.get(), mcLoc("block/lime_concrete"));
+        wallBlock(ModBlocks.LIME_CONCRETE_WALL.get(), blockTexture(Blocks.LIME_CONCRETE));
+
+        blockItem(ModBlocks.LIME_CONCRETE_STAIRS);
+        blockItem(ModBlocks.LIME_CONCRETE_SLAB);
+        blockItem(ModBlocks.LIME_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void greenConcreteBlocks() {
+        stairsBlock(ModBlocks.GREEN_CONCRETE_STAIRS.get(), blockTexture(Blocks.GREEN_CONCRETE));
+        slabBlock(ModBlocks.GREEN_CONCRETE_SLAB.get(), blockTexture(Blocks.GREEN_CONCRETE), blockTexture(Blocks.GREEN_CONCRETE));
+        pressurePlateBlock(ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/green_concrete"));
+        buttonBlock(ModBlocks.GREEN_CONCRETE_BUTTON.get(), mcLoc("block/green_concrete"));
+        wallBlock(ModBlocks.GREEN_CONCRETE_WALL.get(), blockTexture(Blocks.GREEN_CONCRETE));
+
+        blockItem(ModBlocks.GREEN_CONCRETE_STAIRS);
+        blockItem(ModBlocks.GREEN_CONCRETE_SLAB);
+        blockItem(ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void cyanConcreteBlocks() {
+        stairsBlock(ModBlocks.CYAN_CONCRETE_STAIRS.get(), blockTexture(Blocks.CYAN_CONCRETE));
+        slabBlock(ModBlocks.CYAN_CONCRETE_SLAB.get(), blockTexture(Blocks.CYAN_CONCRETE), blockTexture(Blocks.CYAN_CONCRETE));
+        pressurePlateBlock(ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/cyan_concrete"));
+        buttonBlock(ModBlocks.CYAN_CONCRETE_BUTTON.get(), mcLoc("block/cyan_concrete"));
+        wallBlock(ModBlocks.CYAN_CONCRETE_WALL.get(), blockTexture(Blocks.CYAN_CONCRETE));
+
+        blockItem(ModBlocks.CYAN_CONCRETE_STAIRS);
+        blockItem(ModBlocks.CYAN_CONCRETE_SLAB);
+        blockItem(ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void lightBlueConcreteBlocks() {
+        stairsBlock(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS.get(), blockTexture(Blocks.LIGHT_BLUE_CONCRETE));
+        slabBlock(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB.get(), blockTexture(Blocks.LIGHT_BLUE_CONCRETE), blockTexture(Blocks.LIGHT_BLUE_CONCRETE));
+        pressurePlateBlock(ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/light_blue_concrete"));
+        buttonBlock(ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON.get(), mcLoc("block/light_blue_concrete"));
+        wallBlock(ModBlocks.LIGHT_BLUE_CONCRETE_WALL.get(), blockTexture(Blocks.LIGHT_BLUE_CONCRETE));
+
+        blockItem(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
+        blockItem(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB);
+        blockItem(ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void blueConcreteBlocks() {
+        stairsBlock(ModBlocks.BLUE_CONCRETE_STAIRS.get(), blockTexture(Blocks.BLUE_CONCRETE));
+        slabBlock(ModBlocks.BLUE_CONCRETE_SLAB.get(), blockTexture(Blocks.BLUE_CONCRETE), blockTexture(Blocks.BLUE_CONCRETE));
+        pressurePlateBlock(ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/blue_concrete"));
+        buttonBlock(ModBlocks.BLUE_CONCRETE_BUTTON.get(), mcLoc("block/blue_concrete"));
+        wallBlock(ModBlocks.BLUE_CONCRETE_WALL.get(), blockTexture(Blocks.BLUE_CONCRETE));
+
+        blockItem(ModBlocks.BLUE_CONCRETE_STAIRS);
+        blockItem(ModBlocks.BLUE_CONCRETE_SLAB);
+        blockItem(ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void purpleConcreteBlocks() {
+        stairsBlock(ModBlocks.PURPLE_CONCRETE_STAIRS.get(), blockTexture(Blocks.PURPLE_CONCRETE));
+        slabBlock(ModBlocks.PURPLE_CONCRETE_SLAB.get(), blockTexture(Blocks.PURPLE_CONCRETE), blockTexture(Blocks.PURPLE_CONCRETE));
+        pressurePlateBlock(ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/purple_concrete"));
+        buttonBlock(ModBlocks.PURPLE_CONCRETE_BUTTON.get(), mcLoc("block/purple_concrete"));
+        wallBlock(ModBlocks.PURPLE_CONCRETE_WALL.get(), blockTexture(Blocks.PURPLE_CONCRETE));
+
+        blockItem(ModBlocks.PURPLE_CONCRETE_STAIRS);
+        blockItem(ModBlocks.PURPLE_CONCRETE_SLAB);
+        blockItem(ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void magentaConcreteBlocks() {
+        stairsBlock(ModBlocks.MAGENTA_CONCRETE_STAIRS.get(), blockTexture(Blocks.MAGENTA_CONCRETE));
+        slabBlock(ModBlocks.MAGENTA_CONCRETE_SLAB.get(), blockTexture(Blocks.MAGENTA_CONCRETE), blockTexture(Blocks.MAGENTA_CONCRETE));
+        pressurePlateBlock(ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/magenta_concrete"));
+        buttonBlock(ModBlocks.MAGENTA_CONCRETE_BUTTON.get(), mcLoc("block/magenta_concrete"));
+        wallBlock(ModBlocks.MAGENTA_CONCRETE_WALL.get(), blockTexture(Blocks.MAGENTA_CONCRETE));
+
+        blockItem(ModBlocks.MAGENTA_CONCRETE_STAIRS);
+        blockItem(ModBlocks.MAGENTA_CONCRETE_SLAB);
+        blockItem(ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE);
+    }
+
+    private void pinkConcreteBlocks() {
+        stairsBlock(ModBlocks.PINK_CONCRETE_STAIRS.get(), blockTexture(Blocks.PINK_CONCRETE));
+        slabBlock(ModBlocks.PINK_CONCRETE_SLAB.get(), blockTexture(Blocks.PINK_CONCRETE), blockTexture(Blocks.PINK_CONCRETE));
+        pressurePlateBlock(ModBlocks.PINK_CONCRETE_PRESSURE_PLATE.get(), mcLoc("block/pink_concrete"));
+        buttonBlock(ModBlocks.PINK_CONCRETE_BUTTON.get(), mcLoc("block/pink_concrete"));
+        wallBlock(ModBlocks.PINK_CONCRETE_WALL.get(), blockTexture(Blocks.PINK_CONCRETE));
+
+        blockItem(ModBlocks.PINK_CONCRETE_STAIRS);
+        blockItem(ModBlocks.PINK_CONCRETE_SLAB);
+        blockItem(ModBlocks.PINK_CONCRETE_PRESSURE_PLATE);
     }
 
     private void oakBlocks() {
