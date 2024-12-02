@@ -303,6 +303,78 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CHERRY_WOOD_WALL.get());
         dropSelf(ModBlocks.CHERRY_STRIPPED_WOOD_WALL.get());
 
+        //
+        //
+
+        dropSelf(ModBlocks.CRIMSON_HYPHAE_STAIRS.get());
+        dropSelf(ModBlocks.CRIMSON_STRIPPED_HYPHAE_STAIRS.get());
+        dropSelf(ModBlocks.CRIMSON_STEM_STAIRS.get());
+        dropSelf(ModBlocks.CRIMSON_STRIPPED_STEM_STAIRS.get());
+
+        add(ModBlocks.CRIMSON_HYPHAE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CRIMSON_HYPHAE_SLAB.get()));
+        add(ModBlocks.CRIMSON_STRIPPED_HYPHAE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CRIMSON_STRIPPED_HYPHAE_SLAB.get()));
+        add(ModBlocks.CRIMSON_STEM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CRIMSON_STEM_SLAB.get()));
+        add(ModBlocks.CRIMSON_STRIPPED_STEM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CRIMSON_STRIPPED_STEM_SLAB.get()));
+
+        dropSelf(ModBlocks.CRIMSON_HYPHAE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.CRIMSON_STRIPPED_HYPHAE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.CRIMSON_STEM_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.CRIMSON_STRIPPED_STEM_PRESSURE_PLATE.get());
+
+        dropSelf(ModBlocks.CRIMSON_HYPHAE_BUTTON.get());
+        dropSelf(ModBlocks.CRIMSON_STRIPPED_HYPHAE_BUTTON.get());
+        dropSelf(ModBlocks.CRIMSON_STEM_BUTTON.get());
+        dropSelf(ModBlocks.CRIMSON_STRIPPED_STEM_BUTTON.get());
+
+        dropSelf(ModBlocks.CRIMSON_HYPHAE_FENCE.get());
+        dropSelf(ModBlocks.CRIMSON_STRIPPED_HYPHAE_FENCE.get());
+        dropSelf(ModBlocks.CRIMSON_HYPHAE_FENCE_GATE.get());
+        dropSelf(ModBlocks.CRIMSON_STRIPPED_HYPHAE_FENCE_GATE.get());
+
+        dropSelf(ModBlocks.CRIMSON_PLANK_WALL.get());
+        dropSelf(ModBlocks.CRIMSON_HYPHAE_WALL.get());
+        dropSelf(ModBlocks.CRIMSON_STRIPPED_HYPHAE_WALL.get());
+
+        //
+        //
+
+        dropSelf(ModBlocks.WARPED_HYPHAE_STAIRS.get());
+        dropSelf(ModBlocks.WARPED_STRIPPED_HYPHAE_STAIRS.get());
+        dropSelf(ModBlocks.WARPED_STEM_STAIRS.get());
+        dropSelf(ModBlocks.WARPED_STRIPPED_STEM_STAIRS.get());
+
+        add(ModBlocks.WARPED_HYPHAE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.WARPED_HYPHAE_SLAB.get()));
+        add(ModBlocks.WARPED_STRIPPED_HYPHAE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.WARPED_STRIPPED_HYPHAE_SLAB.get()));
+        add(ModBlocks.WARPED_STEM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.WARPED_STEM_SLAB.get()));
+        add(ModBlocks.WARPED_STRIPPED_STEM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.WARPED_STRIPPED_STEM_SLAB.get()));
+
+        dropSelf(ModBlocks.WARPED_HYPHAE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.WARPED_STRIPPED_HYPHAE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.WARPED_STEM_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.WARPED_STRIPPED_STEM_PRESSURE_PLATE.get());
+
+        dropSelf(ModBlocks.WARPED_HYPHAE_BUTTON.get());
+        dropSelf(ModBlocks.WARPED_STRIPPED_HYPHAE_BUTTON.get());
+        dropSelf(ModBlocks.WARPED_STEM_BUTTON.get());
+        dropSelf(ModBlocks.WARPED_STRIPPED_STEM_BUTTON.get());
+
+        dropSelf(ModBlocks.WARPED_HYPHAE_FENCE.get());
+        dropSelf(ModBlocks.WARPED_STRIPPED_HYPHAE_FENCE.get());
+        dropSelf(ModBlocks.WARPED_HYPHAE_FENCE_GATE.get());
+        dropSelf(ModBlocks.WARPED_STRIPPED_HYPHAE_FENCE_GATE.get());
+
+        dropSelf(ModBlocks.WARPED_PLANK_WALL.get());
+        dropSelf(ModBlocks.WARPED_HYPHAE_WALL.get());
+        dropSelf(ModBlocks.WARPED_STRIPPED_HYPHAE_WALL.get());
+
     }
 
     @Override

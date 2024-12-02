@@ -136,6 +136,36 @@ public class ModItemModelProvider extends ItemModelProvider {
         wallItem(ModBlocks.CHERRY_PLANK_WALL, Blocks.CHERRY_PLANKS);
         wallItem(ModBlocks.CHERRY_WOOD_WALL, Blocks.CHERRY_WOOD);
         wallItem(ModBlocks.CHERRY_STRIPPED_WOOD_WALL, Blocks.STRIPPED_CHERRY_WOOD);
+
+        //
+        //
+
+        buttonItem(ModBlocks.CRIMSON_HYPHAE_BUTTON, Blocks.CRIMSON_HYPHAE);
+        buttonItem(ModBlocks.CRIMSON_STRIPPED_HYPHAE_BUTTON, Blocks.STRIPPED_CRIMSON_HYPHAE);
+        buttonItem(ModBlocks.CRIMSON_STEM_BUTTON, Blocks.CRIMSON_STEM);
+        buttonItem(ModBlocks.CRIMSON_STRIPPED_STEM_BUTTON, Blocks.STRIPPED_CRIMSON_STEM);
+
+        fenceItem(ModBlocks.CRIMSON_HYPHAE_FENCE, Blocks.CRIMSON_HYPHAE);
+        fenceItem(ModBlocks.CRIMSON_STRIPPED_HYPHAE_FENCE, Blocks.STRIPPED_CRIMSON_HYPHAE);
+
+        wallItem(ModBlocks.CRIMSON_PLANK_WALL, Blocks.CRIMSON_PLANKS);
+        wallItem(ModBlocks.CRIMSON_HYPHAE_WALL, Blocks.CRIMSON_HYPHAE);
+        wallItem(ModBlocks.CRIMSON_STRIPPED_HYPHAE_WALL, Blocks.STRIPPED_CRIMSON_HYPHAE);
+
+        //
+        //
+
+        buttonItem(ModBlocks.WARPED_HYPHAE_BUTTON, Blocks.WARPED_HYPHAE);
+        buttonItem(ModBlocks.WARPED_STRIPPED_HYPHAE_BUTTON, Blocks.STRIPPED_WARPED_HYPHAE);
+        buttonItem(ModBlocks.WARPED_STEM_BUTTON, Blocks.WARPED_STEM);
+        buttonItem(ModBlocks.WARPED_STRIPPED_STEM_BUTTON, Blocks.STRIPPED_WARPED_STEM);
+
+        fenceItem(ModBlocks.WARPED_HYPHAE_FENCE, Blocks.WARPED_HYPHAE);
+        fenceItem(ModBlocks.WARPED_STRIPPED_HYPHAE_FENCE, Blocks.STRIPPED_WARPED_HYPHAE);
+
+        wallItem(ModBlocks.WARPED_PLANK_WALL, Blocks.WARPED_PLANKS);
+        wallItem(ModBlocks.WARPED_HYPHAE_WALL, Blocks.WARPED_HYPHAE);
+        wallItem(ModBlocks.WARPED_STRIPPED_HYPHAE_WALL, Blocks.STRIPPED_WARPED_HYPHAE);
     }
 
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {

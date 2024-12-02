@@ -40,7 +40,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.MANGROVE_STRIPPED_WOOD_FENCE.get())
 
                 .add(ModBlocks.CHERRY_WOOD_FENCE.get())
-                .add(ModBlocks.CHERRY_STRIPPED_WOOD_FENCE.get());
+                .add(ModBlocks.CHERRY_STRIPPED_WOOD_FENCE.get())
+
+                .add(ModBlocks.CRIMSON_HYPHAE_FENCE.get())
+                .add(ModBlocks.CRIMSON_STRIPPED_HYPHAE_FENCE.get())
+
+                .add(ModBlocks.WARPED_HYPHAE_FENCE.get())
+                .add(ModBlocks.WARPED_STRIPPED_HYPHAE_FENCE.get());
 
         tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.OAK_WOOD_FENCE_GATE.get())
@@ -65,7 +71,13 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.MANGROVE_STRIPPED_WOOD_FENCE_GATE.get())
 
                 .add(ModBlocks.CHERRY_WOOD_FENCE_GATE.get())
-                .add(ModBlocks.CHERRY_STRIPPED_WOOD_FENCE_GATE.get());
+                .add(ModBlocks.CHERRY_STRIPPED_WOOD_FENCE_GATE.get())
+
+                .add(ModBlocks.CRIMSON_HYPHAE_FENCE_GATE.get())
+                .add(ModBlocks.CRIMSON_STRIPPED_HYPHAE_FENCE_GATE.get())
+
+                .add(ModBlocks.WARPED_HYPHAE_FENCE_GATE.get())
+                .add(ModBlocks.WARPED_STRIPPED_HYPHAE_FENCE_GATE.get());
 
         tag(BlockTags.WALLS)
                 .add(ModBlocks.OAK_PLANK_WALL.get())
@@ -98,6 +110,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
                 .add(ModBlocks.CHERRY_PLANK_WALL.get())
                 .add(ModBlocks.CHERRY_WOOD_WALL.get())
-                .add(ModBlocks.CHERRY_STRIPPED_WOOD_WALL.get());
+                .add(ModBlocks.CHERRY_STRIPPED_WOOD_WALL.get())
+
+                .add(ModBlocks.CRIMSON_PLANK_WALL.get())
+                .add(ModBlocks.CRIMSON_HYPHAE_WALL.get())
+                .add(ModBlocks.CRIMSON_STRIPPED_HYPHAE_WALL.get())
+
+                .add(ModBlocks.WARPED_PLANK_WALL.get())
+                .add(ModBlocks.WARPED_HYPHAE_WALL.get())
+                .add(ModBlocks.WARPED_STRIPPED_HYPHAE_WALL.get());
     }
 }

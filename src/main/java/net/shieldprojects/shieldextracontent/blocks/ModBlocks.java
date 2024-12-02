@@ -14,6 +14,7 @@ import net.shieldprojects.shieldextracontent.item.ModItems;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("ALL")
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(ShieldExtraContentMod.MOD_ID);
