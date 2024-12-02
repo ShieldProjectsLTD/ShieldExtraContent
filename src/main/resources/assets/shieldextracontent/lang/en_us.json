@@ -5,20 +5,5 @@
   "creativetab.shieldextracontent.the_end_blocks_tab.title": "The End Blocks",
   "creativetab.shieldextracontent.decorative_blocks_tab.title": "Decorative Blocks",
 
-  "item.shieldextracontent.stone_rewind": "Stone Of Memory",
-  "item.shieldextracontent.small_coal": "Small Coal",
-  "item.shieldextracontent.small_charcoal": "Small Charcoal",
-  "item.shieldextracontent.locked_soul": "Locked Soul",
-  "item.shieldextracontent.unholy_soul": "Unholy Soul",
-
-  "block.shieldextracontent.acacia_wood_wall": "Acacia Wood Wall",
-
-  "tooltip.shieldextracontent.locked_soul.title": "§8§oI can feel how this soul wants to come out and let out pure light.",
-  "tooltip.shieldextracontent.locked_soul.title_shifted": "\n§a§lUsage: §r&aWhen you press the RMB, you release a locked soul emitting a bright light that emits enough light to escape the darkness",
-
-  "tooltip.shieldextracontent.unholy_soul.title": "§8§oEww, looks... It's terrifying, I've never seen such an abundance of parasites...",
-  "tooltip.shieldextracontent.unholy_soul.title_shifted": "\n§8§oPreviously, this soul was holy and filled with pure light. Now it has become a terrifying trinket",
-
-  "tooltip.shieldextracontent.stone_rewind.title": "§8§oShiny",
-  "tooltip.shieldextracontent.stone_rewind.title_shifted": "\n§8§oPreviously, this soul was holy and filled with pure light. Now it has become a terrifying trinket"
+  "block.shieldextracontent.acacia_wood_wall": "Acacia Wood Wall"
 }

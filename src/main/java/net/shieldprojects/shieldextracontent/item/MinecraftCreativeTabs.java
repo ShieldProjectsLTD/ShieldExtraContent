@@ -8,6 +8,7 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.shieldprojects.shieldextracontent.ShieldExtraContentMod;
+import net.shieldprojects.shieldextracontent.blocks.ModBlocks;
 
 @EventBusSubscriber(modid = ShieldExtraContentMod.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class MinecraftCreativeTabs {
@@ -15,15 +16,268 @@ public class MinecraftCreativeTabs {
     @SubscribeEvent
     public static void onTabBuildContents(final BuildCreativeModeTabContentsEvent event) {
         final ResourceKey<CreativeModeTab> tab = event.getTabKey();
-        if(tab.equals(CreativeModeTabs.INGREDIENTS)) {
-            event.insertAfter(Items.COAL.getDefaultInstance(), ModItems.SMALL_COAL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.insertAfter(Items.HEART_OF_THE_SEA.getDefaultInstance(), ModItems.LOCKED_SOUL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.insertAfter(ModItems.LOCKED_SOUL.toStack(), ModItems.UNHOLY_SOUL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-        }
 
-        if(tab.equals(CreativeModeTabs.TOOLS_AND_UTILITIES)) {
-            event.insertAfter(Items.ENDER_EYE.getDefaultInstance(), ModItems.STONE_REWIND.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
-            event.insertAfter(Items.WIND_CHARGE.getDefaultInstance(), ModItems.LOCKED_SOUL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+        if(tab.equals(CreativeModeTabs.BUILDING_BLOCKS)) {
+            event.insertAfter(Items.OAK_STAIRS.getDefaultInstance(), ModBlocks.OAK_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_WOOD_STAIRS.toStack(), ModBlocks.OAK_STRIPPED_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_STRIPPED_WOOD_STAIRS.toStack(), ModBlocks.OAK_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_LOG_STAIRS.toStack(), ModBlocks.OAK_STRIPPED_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.OAK_SLAB.getDefaultInstance(), ModBlocks.OAK_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_WOOD_SLAB.toStack(), ModBlocks.OAK_STRIPPED_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_STRIPPED_WOOD_SLAB.toStack(), ModBlocks.OAK_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_LOG_SLAB.toStack(), ModBlocks.OAK_STRIPPED_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.OAK_PRESSURE_PLATE.getDefaultInstance(), ModBlocks.OAK_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.OAK_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.OAK_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_LOG_PRESSURE_PLATE.toStack(), ModBlocks.OAK_STRIPPED_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.OAK_BUTTON.getDefaultInstance(), ModBlocks.OAK_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_WOOD_BUTTON.toStack(), ModBlocks.OAK_STRIPPED_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_STRIPPED_WOOD_BUTTON.toStack(), ModBlocks.OAK_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_LOG_BUTTON.toStack(), ModBlocks.OAK_STRIPPED_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.OAK_FENCE.getDefaultInstance(), ModBlocks.OAK_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_WOOD_FENCE.toStack(), ModBlocks.OAK_STRIPPED_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.OAK_FENCE_GATE.getDefaultInstance(), ModBlocks.OAK_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_WOOD_FENCE_GATE.toStack(), ModBlocks.OAK_STRIPPED_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(ModBlocks.OAK_STRIPPED_LOG_BUTTON.toStack(), ModBlocks.OAK_PLANK_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_PLANK_WALL.toStack(), ModBlocks.OAK_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.OAK_WOOD_WALL.toStack(), ModBlocks.OAK_STRIPPED_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            //
+            //
+
+            event.insertAfter(Items.SPRUCE_STAIRS.getDefaultInstance(), ModBlocks.SPRUCE_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_WOOD_STAIRS.toStack(), ModBlocks.SPRUCE_STRIPPED_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_STRIPPED_WOOD_STAIRS.toStack(), ModBlocks.SPRUCE_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_LOG_STAIRS.toStack(), ModBlocks.SPRUCE_STRIPPED_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.SPRUCE_SLAB.getDefaultInstance(), ModBlocks.SPRUCE_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_WOOD_SLAB.toStack(), ModBlocks.SPRUCE_STRIPPED_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_STRIPPED_WOOD_SLAB.toStack(), ModBlocks.SPRUCE_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_LOG_SLAB.toStack(), ModBlocks.SPRUCE_STRIPPED_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.SPRUCE_PRESSURE_PLATE.getDefaultInstance(), ModBlocks.SPRUCE_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.SPRUCE_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.SPRUCE_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_LOG_PRESSURE_PLATE.toStack(), ModBlocks.SPRUCE_STRIPPED_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.SPRUCE_BUTTON.getDefaultInstance(), ModBlocks.SPRUCE_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_WOOD_BUTTON.toStack(), ModBlocks.SPRUCE_STRIPPED_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_STRIPPED_WOOD_BUTTON.toStack(), ModBlocks.SPRUCE_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_LOG_BUTTON.toStack(), ModBlocks.SPRUCE_STRIPPED_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.SPRUCE_FENCE.getDefaultInstance(), ModBlocks.SPRUCE_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_WOOD_FENCE.toStack(), ModBlocks.SPRUCE_STRIPPED_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.SPRUCE_FENCE_GATE.getDefaultInstance(), ModBlocks.SPRUCE_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_WOOD_FENCE_GATE.toStack(), ModBlocks.SPRUCE_STRIPPED_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(ModBlocks.SPRUCE_STRIPPED_LOG_BUTTON.toStack(), ModBlocks.SPRUCE_PLANK_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_PLANK_WALL.toStack(), ModBlocks.SPRUCE_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.SPRUCE_WOOD_WALL.toStack(), ModBlocks.SPRUCE_STRIPPED_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            //
+            //
+
+            event.insertAfter(Items.BIRCH_STAIRS.getDefaultInstance(), ModBlocks.BIRCH_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_WOOD_STAIRS.toStack(), ModBlocks.BIRCH_STRIPPED_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_STRIPPED_WOOD_STAIRS.toStack(), ModBlocks.BIRCH_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_LOG_STAIRS.toStack(), ModBlocks.BIRCH_STRIPPED_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.BIRCH_SLAB.getDefaultInstance(), ModBlocks.BIRCH_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_WOOD_SLAB.toStack(), ModBlocks.BIRCH_STRIPPED_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_STRIPPED_WOOD_SLAB.toStack(), ModBlocks.BIRCH_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_LOG_SLAB.toStack(), ModBlocks.BIRCH_STRIPPED_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.BIRCH_PRESSURE_PLATE.getDefaultInstance(), ModBlocks.BIRCH_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.BIRCH_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.BIRCH_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_LOG_PRESSURE_PLATE.toStack(), ModBlocks.BIRCH_STRIPPED_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.BIRCH_BUTTON.getDefaultInstance(), ModBlocks.BIRCH_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_WOOD_BUTTON.toStack(), ModBlocks.BIRCH_STRIPPED_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_STRIPPED_WOOD_BUTTON.toStack(), ModBlocks.BIRCH_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_LOG_BUTTON.toStack(), ModBlocks.BIRCH_STRIPPED_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.BIRCH_FENCE.getDefaultInstance(), ModBlocks.BIRCH_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_WOOD_FENCE.toStack(), ModBlocks.BIRCH_STRIPPED_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.BIRCH_FENCE_GATE.getDefaultInstance(), ModBlocks.BIRCH_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_WOOD_FENCE_GATE.toStack(), ModBlocks.BIRCH_STRIPPED_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(ModBlocks.BIRCH_STRIPPED_LOG_BUTTON.toStack(), ModBlocks.BIRCH_PLANK_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_PLANK_WALL.toStack(), ModBlocks.BIRCH_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.BIRCH_WOOD_WALL.toStack(), ModBlocks.BIRCH_STRIPPED_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            //
+            //
+
+            event.insertAfter(Items.JUNGLE_STAIRS.getDefaultInstance(), ModBlocks.JUNGLE_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_WOOD_STAIRS.toStack(), ModBlocks.JUNGLE_STRIPPED_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_STRIPPED_WOOD_STAIRS.toStack(), ModBlocks.JUNGLE_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_LOG_STAIRS.toStack(), ModBlocks.JUNGLE_STRIPPED_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.JUNGLE_SLAB.getDefaultInstance(), ModBlocks.JUNGLE_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_WOOD_SLAB.toStack(), ModBlocks.JUNGLE_STRIPPED_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_STRIPPED_WOOD_SLAB.toStack(), ModBlocks.JUNGLE_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_LOG_SLAB.toStack(), ModBlocks.JUNGLE_STRIPPED_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.JUNGLE_PRESSURE_PLATE.getDefaultInstance(), ModBlocks.JUNGLE_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.JUNGLE_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.JUNGLE_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_LOG_PRESSURE_PLATE.toStack(), ModBlocks.JUNGLE_STRIPPED_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.JUNGLE_BUTTON.getDefaultInstance(), ModBlocks.JUNGLE_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_WOOD_BUTTON.toStack(), ModBlocks.JUNGLE_STRIPPED_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_STRIPPED_WOOD_BUTTON.toStack(), ModBlocks.JUNGLE_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_LOG_BUTTON.toStack(), ModBlocks.JUNGLE_STRIPPED_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.JUNGLE_FENCE.getDefaultInstance(), ModBlocks.JUNGLE_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_WOOD_FENCE.toStack(), ModBlocks.JUNGLE_STRIPPED_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.JUNGLE_FENCE_GATE.getDefaultInstance(), ModBlocks.JUNGLE_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_WOOD_FENCE_GATE.toStack(), ModBlocks.JUNGLE_STRIPPED_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(ModBlocks.JUNGLE_STRIPPED_LOG_BUTTON.toStack(), ModBlocks.JUNGLE_PLANK_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_PLANK_WALL.toStack(), ModBlocks.JUNGLE_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.JUNGLE_WOOD_WALL.toStack(), ModBlocks.JUNGLE_STRIPPED_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            //
+            //
+
+            event.insertAfter(Items.ACACIA_STAIRS.getDefaultInstance(), ModBlocks.ACACIA_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_WOOD_STAIRS.toStack(), ModBlocks.ACACIA_STRIPPED_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_STRIPPED_WOOD_STAIRS.toStack(), ModBlocks.ACACIA_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_LOG_STAIRS.toStack(), ModBlocks.ACACIA_STRIPPED_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.ACACIA_SLAB.getDefaultInstance(), ModBlocks.ACACIA_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_WOOD_SLAB.toStack(), ModBlocks.ACACIA_STRIPPED_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_STRIPPED_WOOD_SLAB.toStack(), ModBlocks.ACACIA_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_LOG_SLAB.toStack(), ModBlocks.ACACIA_STRIPPED_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.ACACIA_PRESSURE_PLATE.getDefaultInstance(), ModBlocks.ACACIA_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.ACACIA_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.ACACIA_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_LOG_PRESSURE_PLATE.toStack(), ModBlocks.ACACIA_STRIPPED_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.ACACIA_BUTTON.getDefaultInstance(), ModBlocks.ACACIA_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_WOOD_BUTTON.toStack(), ModBlocks.ACACIA_STRIPPED_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_STRIPPED_WOOD_BUTTON.toStack(), ModBlocks.ACACIA_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_LOG_BUTTON.toStack(), ModBlocks.ACACIA_STRIPPED_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.ACACIA_FENCE.getDefaultInstance(), ModBlocks.ACACIA_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_WOOD_FENCE.toStack(), ModBlocks.ACACIA_STRIPPED_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.ACACIA_FENCE_GATE.getDefaultInstance(), ModBlocks.ACACIA_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_WOOD_FENCE_GATE.toStack(), ModBlocks.ACACIA_STRIPPED_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(ModBlocks.ACACIA_STRIPPED_LOG_BUTTON.toStack(), ModBlocks.ACACIA_PLANK_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_PLANK_WALL.toStack(), ModBlocks.ACACIA_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.ACACIA_WOOD_WALL.toStack(), ModBlocks.ACACIA_STRIPPED_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            //
+            //
+
+            event.insertAfter(Items.DARK_OAK_STAIRS.getDefaultInstance(), ModBlocks.DARK_OAK_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_WOOD_STAIRS.toStack(), ModBlocks.DARK_OAK_STRIPPED_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_STRIPPED_WOOD_STAIRS.toStack(), ModBlocks.DARK_OAK_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_LOG_STAIRS.toStack(), ModBlocks.DARK_OAK_STRIPPED_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.DARK_OAK_SLAB.getDefaultInstance(), ModBlocks.DARK_OAK_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_WOOD_SLAB.toStack(), ModBlocks.DARK_OAK_STRIPPED_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_STRIPPED_WOOD_SLAB.toStack(), ModBlocks.DARK_OAK_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_LOG_SLAB.toStack(), ModBlocks.DARK_OAK_STRIPPED_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.DARK_OAK_PRESSURE_PLATE.getDefaultInstance(), ModBlocks.DARK_OAK_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.DARK_OAK_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.DARK_OAK_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_LOG_PRESSURE_PLATE.toStack(), ModBlocks.DARK_OAK_STRIPPED_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.DARK_OAK_BUTTON.getDefaultInstance(), ModBlocks.DARK_OAK_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_WOOD_BUTTON.toStack(), ModBlocks.DARK_OAK_STRIPPED_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_STRIPPED_WOOD_BUTTON.toStack(), ModBlocks.DARK_OAK_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_LOG_BUTTON.toStack(), ModBlocks.DARK_OAK_STRIPPED_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.DARK_OAK_FENCE.getDefaultInstance(), ModBlocks.DARK_OAK_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_WOOD_FENCE.toStack(), ModBlocks.DARK_OAK_STRIPPED_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.DARK_OAK_FENCE_GATE.getDefaultInstance(), ModBlocks.DARK_OAK_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_WOOD_FENCE_GATE.toStack(), ModBlocks.DARK_OAK_STRIPPED_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(ModBlocks.DARK_OAK_STRIPPED_LOG_BUTTON.toStack(), ModBlocks.DARK_OAK_PLANK_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_PLANK_WALL.toStack(), ModBlocks.DARK_OAK_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.DARK_OAK_WOOD_WALL.toStack(), ModBlocks.DARK_OAK_STRIPPED_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            //
+            //
+
+            event.insertAfter(Items.MANGROVE_STAIRS.getDefaultInstance(), ModBlocks.MANGROVE_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_WOOD_STAIRS.toStack(), ModBlocks.MANGROVE_STRIPPED_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_STRIPPED_WOOD_STAIRS.toStack(), ModBlocks.MANGROVE_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_LOG_STAIRS.toStack(), ModBlocks.MANGROVE_STRIPPED_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.MANGROVE_SLAB.getDefaultInstance(), ModBlocks.MANGROVE_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_WOOD_SLAB.toStack(), ModBlocks.MANGROVE_STRIPPED_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_STRIPPED_WOOD_SLAB.toStack(), ModBlocks.MANGROVE_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_LOG_SLAB.toStack(), ModBlocks.MANGROVE_STRIPPED_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.MANGROVE_PRESSURE_PLATE.getDefaultInstance(), ModBlocks.MANGROVE_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.MANGROVE_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.MANGROVE_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_LOG_PRESSURE_PLATE.toStack(), ModBlocks.MANGROVE_STRIPPED_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.MANGROVE_BUTTON.getDefaultInstance(), ModBlocks.MANGROVE_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_WOOD_BUTTON.toStack(), ModBlocks.MANGROVE_STRIPPED_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_STRIPPED_WOOD_BUTTON.toStack(), ModBlocks.MANGROVE_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_LOG_BUTTON.toStack(), ModBlocks.MANGROVE_STRIPPED_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.MANGROVE_FENCE.getDefaultInstance(), ModBlocks.MANGROVE_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_WOOD_FENCE.toStack(), ModBlocks.MANGROVE_STRIPPED_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.MANGROVE_FENCE_GATE.getDefaultInstance(), ModBlocks.MANGROVE_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_WOOD_FENCE_GATE.toStack(), ModBlocks.MANGROVE_STRIPPED_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(ModBlocks.MANGROVE_STRIPPED_LOG_BUTTON.toStack(), ModBlocks.MANGROVE_PLANK_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_PLANK_WALL.toStack(), ModBlocks.MANGROVE_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.MANGROVE_WOOD_WALL.toStack(), ModBlocks.MANGROVE_STRIPPED_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            //
+            //
+
+            event.insertAfter(Items.CHERRY_STAIRS.getDefaultInstance(), ModBlocks.CHERRY_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_WOOD_STAIRS.toStack(), ModBlocks.CHERRY_STRIPPED_WOOD_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_STRIPPED_WOOD_STAIRS.toStack(), ModBlocks.CHERRY_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_LOG_STAIRS.toStack(), ModBlocks.CHERRY_STRIPPED_LOG_STAIRS.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.CHERRY_SLAB.getDefaultInstance(), ModBlocks.CHERRY_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_WOOD_SLAB.toStack(), ModBlocks.CHERRY_STRIPPED_WOOD_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_STRIPPED_WOOD_SLAB.toStack(), ModBlocks.CHERRY_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_LOG_SLAB.toStack(), ModBlocks.CHERRY_STRIPPED_LOG_SLAB.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.CHERRY_PRESSURE_PLATE.getDefaultInstance(), ModBlocks.CHERRY_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.CHERRY_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_STRIPPED_WOOD_PRESSURE_PLATE.toStack(), ModBlocks.CHERRY_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_LOG_PRESSURE_PLATE.toStack(), ModBlocks.CHERRY_STRIPPED_LOG_PRESSURE_PLATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.CHERRY_BUTTON.getDefaultInstance(), ModBlocks.CHERRY_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_WOOD_BUTTON.toStack(), ModBlocks.CHERRY_STRIPPED_WOOD_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_STRIPPED_WOOD_BUTTON.toStack(), ModBlocks.CHERRY_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_LOG_BUTTON.toStack(), ModBlocks.CHERRY_STRIPPED_LOG_BUTTON.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.CHERRY_FENCE.getDefaultInstance(), ModBlocks.CHERRY_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_WOOD_FENCE.toStack(), ModBlocks.CHERRY_STRIPPED_WOOD_FENCE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(Items.CHERRY_FENCE_GATE.getDefaultInstance(), ModBlocks.CHERRY_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_WOOD_FENCE_GATE.toStack(), ModBlocks.CHERRY_STRIPPED_WOOD_FENCE_GATE.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+
+            event.insertAfter(ModBlocks.CHERRY_STRIPPED_LOG_BUTTON.toStack(), ModBlocks.CHERRY_PLANK_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_PLANK_WALL.toStack(), ModBlocks.CHERRY_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(ModBlocks.CHERRY_WOOD_WALL.toStack(), ModBlocks.CHERRY_STRIPPED_WOOD_WALL.toStack(), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
     }
 }
