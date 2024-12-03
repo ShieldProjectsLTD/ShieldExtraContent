@@ -16,7 +16,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         super(output, registries);
     }
 
-
     @Override
     protected void buildRecipes(@NotNull RecipeOutput recipeOutput) {
         oakRecipe(recipeOutput);
@@ -1609,7 +1608,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void whiteConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_STAIRS, 4)
                 .define('X', Items.WHITE_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1617,13 +1616,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_white_concrete", has(Blocks.WHITE_CONCRETE))
                 .save(recipeOutput, "recipe_white_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_SLAB, 6)
                 .define('X', Items.WHITE_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_white_concrete", has(Blocks.WHITE_CONCRETE))
                 .save(recipeOutput, "recipe_white_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_WALL, 6)
                 .define('X', Items.WHITE_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -1632,13 +1631,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_white_concrete", has(Blocks.WHITE_CONCRETE))
                 .save(recipeOutput, "recipe_white_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.WHITE_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_white_concrete", has(Blocks.WHITE_CONCRETE))
                 .save(recipeOutput, "recipe_white_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_BUTTON, 1)
                 .requires(Items.WHITE_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_white_concrete", has(Blocks.WHITE_CONCRETE))
@@ -1646,7 +1645,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void lightGrayConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS, 4)
                 .define('X', Items.LIGHT_GRAY_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1654,13 +1653,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_light_gray_concrete", has(Blocks.LIGHT_GRAY_CONCRETE))
                 .save(recipeOutput, "recipe_light_gray_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, 6)
                 .define('X', Items.LIGHT_GRAY_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_light_gray_concrete", has(Blocks.LIGHT_GRAY_CONCRETE))
                 .save(recipeOutput, "recipe_light_gray_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_WALL, 6)
                 .define('X', Items.LIGHT_GRAY_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -1669,13 +1668,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_light_gray_concrete", has(Blocks.LIGHT_GRAY_CONCRETE))
                 .save(recipeOutput, "recipe_light_gray_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.LIGHT_GRAY_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_light_gray_concrete", has(Blocks.LIGHT_GRAY_CONCRETE))
                 .save(recipeOutput, "recipe_light_gray_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_GRAY_CONCRETE_BUTTON, 1)
                 .requires(Items.LIGHT_GRAY_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_light_gray_concrete", has(Blocks.LIGHT_GRAY_CONCRETE))
@@ -1683,7 +1682,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void grayConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_STAIRS, 4)
                 .define('X', Items.GRAY_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1691,13 +1690,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_gray_concrete", has(Blocks.GRAY_CONCRETE))
                 .save(recipeOutput, "recipe_gray_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_SLAB, 6)
                 .define('X', Items.GRAY_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_gray_concrete", has(Blocks.GRAY_CONCRETE))
                 .save(recipeOutput, "recipe_gray_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_WALL, 6)
                 .define('X', Items.GRAY_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -1706,13 +1705,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_gray_concrete", has(Blocks.GRAY_CONCRETE))
                 .save(recipeOutput, "recipe_gray_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.GRAY_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_gray_concrete", has(Blocks.GRAY_CONCRETE))
                 .save(recipeOutput, "recipe_gray_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GRAY_CONCRETE_BUTTON, 1)
                 .requires(Items.GRAY_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_gray_concrete", has(Blocks.GRAY_CONCRETE))
@@ -1720,7 +1719,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void blackConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_STAIRS, 4)
                 .define('X', Items.BLACK_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1728,13 +1727,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_black_concrete", has(Blocks.BLACK_CONCRETE))
                 .save(recipeOutput, "recipe_black_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_SLAB, 6)
                 .define('X', Items.BLACK_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_black_concrete", has(Blocks.BLACK_CONCRETE))
                 .save(recipeOutput, "recipe_black_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_WALL, 6)
                 .define('X', Items.BLACK_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -1743,13 +1742,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_black_concrete", has(Blocks.BLACK_CONCRETE))
                 .save(recipeOutput, "recipe_black_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.BLACK_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_black_concrete", has(Blocks.BLACK_CONCRETE))
                 .save(recipeOutput, "recipe_black_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_CONCRETE_BUTTON, 1)
                 .requires(Items.BLACK_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_black_concrete", has(Blocks.BLACK_CONCRETE))
@@ -1757,7 +1756,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void brownConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_STAIRS, 4)
                 .define('X', Items.BROWN_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1765,13 +1764,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_brown_concrete", has(Blocks.BROWN_CONCRETE))
                 .save(recipeOutput, "recipe_brown_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_SLAB, 6)
                 .define('X', Items.BROWN_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_brown_concrete", has(Blocks.BROWN_CONCRETE))
                 .save(recipeOutput, "recipe_brown_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_WALL, 6)
                 .define('X', Items.BROWN_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -1780,13 +1779,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_brown_concrete", has(Blocks.BROWN_CONCRETE))
                 .save(recipeOutput, "recipe_brown_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.BROWN_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_brown_concrete", has(Blocks.BROWN_CONCRETE))
                 .save(recipeOutput, "recipe_brown_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BROWN_CONCRETE_BUTTON, 1)
                 .requires(Items.BROWN_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_brown_concrete", has(Blocks.BROWN_CONCRETE))
@@ -1794,7 +1793,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void redConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_STAIRS, 4)
                 .define('X', Items.RED_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1802,13 +1801,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_red_concrete", has(Blocks.RED_CONCRETE))
                 .save(recipeOutput, "recipe_red_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_SLAB, 6)
                 .define('X', Items.RED_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_red_concrete", has(Blocks.RED_CONCRETE))
                 .save(recipeOutput, "recipe_red_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_WALL, 6)
                 .define('X', Items.RED_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -1817,13 +1816,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_red_concrete", has(Blocks.RED_CONCRETE))
                 .save(recipeOutput, "recipe_red_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.RED_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_red_concrete", has(Blocks.RED_CONCRETE))
                 .save(recipeOutput, "recipe_red_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RED_CONCRETE_BUTTON, 1)
                 .requires(Items.RED_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_red_concrete", has(Blocks.RED_CONCRETE))
@@ -1831,7 +1830,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void orangeConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_STAIRS, 4)
                 .define('X', Items.ORANGE_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1839,13 +1838,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orange_concrete", has(Blocks.ORANGE_CONCRETE))
                 .save(recipeOutput, "recipe_orange_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_SLAB, 6)
                 .define('X', Items.ORANGE_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_orange_concrete", has(Blocks.ORANGE_CONCRETE))
                 .save(recipeOutput, "recipe_orange_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_WALL, 6)
                 .define('X', Items.ORANGE_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -1854,13 +1853,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_orange_concrete", has(Blocks.ORANGE_CONCRETE))
                 .save(recipeOutput, "recipe_orange_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.ORANGE_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_orange_concrete", has(Blocks.ORANGE_CONCRETE))
                 .save(recipeOutput, "recipe_orange_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_BUTTON, 1)
                 .requires(Items.ORANGE_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_orange_concrete", has(Blocks.ORANGE_CONCRETE))
@@ -1868,7 +1867,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void yellowConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_STAIRS, 4)
                 .define('X', Items.YELLOW_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1876,13 +1875,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_yellow_concrete", has(Blocks.YELLOW_CONCRETE))
                 .save(recipeOutput, "recipe_yellow_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_SLAB, 6)
                 .define('X', Items.YELLOW_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_yellow_concrete", has(Blocks.YELLOW_CONCRETE))
                 .save(recipeOutput, "recipe_yellow_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_WALL, 6)
                 .define('X', Items.YELLOW_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -1891,13 +1890,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_yellow_concrete", has(Blocks.YELLOW_CONCRETE))
                 .save(recipeOutput, "recipe_yellow_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.YELLOW_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_yellow_concrete", has(Blocks.YELLOW_CONCRETE))
                 .save(recipeOutput, "recipe_yellow_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YELLOW_CONCRETE_BUTTON, 1)
                 .requires(Items.YELLOW_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_yellow_concrete", has(Blocks.YELLOW_CONCRETE))
@@ -1905,7 +1904,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void limeConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_STAIRS, 4)
                 .define('X', Items.LIME_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1913,13 +1912,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_lime_concrete", has(Blocks.LIME_CONCRETE))
                 .save(recipeOutput, "recipe_lime_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_SLAB, 6)
                 .define('X', Items.LIME_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_lime_concrete", has(Blocks.LIME_CONCRETE))
                 .save(recipeOutput, "recipe_lime_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_WALL, 6)
                 .define('X', Items.LIME_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -1928,13 +1927,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_lime_concrete", has(Blocks.LIME_CONCRETE))
                 .save(recipeOutput, "recipe_lime_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.LIME_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_lime_concrete", has(Blocks.LIME_CONCRETE))
                 .save(recipeOutput, "recipe_lime_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIME_CONCRETE_BUTTON, 1)
                 .requires(Items.LIME_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_lime_concrete", has(Blocks.LIME_CONCRETE))
@@ -1942,7 +1941,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void greenConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_STAIRS, 4)
                 .define('X', Items.GREEN_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1950,13 +1949,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_green_concrete", has(Blocks.GREEN_CONCRETE))
                 .save(recipeOutput, "recipe_green_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_SLAB, 6)
                 .define('X', Items.GREEN_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_green_concrete", has(Blocks.GREEN_CONCRETE))
                 .save(recipeOutput, "recipe_green_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_WALL, 6)
                 .define('X', Items.GREEN_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -1965,13 +1964,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_green_concrete", has(Blocks.GREEN_CONCRETE))
                 .save(recipeOutput, "recipe_green_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.GREEN_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_green_concrete", has(Blocks.GREEN_CONCRETE))
                 .save(recipeOutput, "recipe_green_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GREEN_CONCRETE_BUTTON, 1)
                 .requires(Items.GREEN_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_green_concrete", has(Blocks.GREEN_CONCRETE))
@@ -1979,7 +1978,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void cyanConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_STAIRS, 4)
                 .define('X', Items.CYAN_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -1987,13 +1986,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_cyan_concrete", has(Blocks.CYAN_CONCRETE))
                 .save(recipeOutput, "recipe_cyan_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_SLAB, 6)
                 .define('X', Items.CYAN_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_cyan_concrete", has(Blocks.CYAN_CONCRETE))
                 .save(recipeOutput, "recipe_cyan_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_WALL, 6)
                 .define('X', Items.CYAN_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -2002,13 +2001,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_cyan_concrete", has(Blocks.CYAN_CONCRETE))
                 .save(recipeOutput, "recipe_cyan_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.CYAN_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_cyan_concrete", has(Blocks.CYAN_CONCRETE))
                 .save(recipeOutput, "recipe_cyan_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CYAN_CONCRETE_BUTTON, 1)
                 .requires(Items.CYAN_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_cyan_concrete", has(Blocks.CYAN_CONCRETE))
@@ -2016,7 +2015,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void lightBlueConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS, 4)
                 .define('X', Items.LIGHT_BLUE_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -2024,13 +2023,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_light_blue_concrete", has(Blocks.LIGHT_BLUE_CONCRETE))
                 .save(recipeOutput, "recipe_light_blue_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, 6)
                 .define('X', Items.LIGHT_BLUE_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_light_blue_concrete", has(Blocks.LIGHT_BLUE_CONCRETE))
                 .save(recipeOutput, "recipe_light_blue_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_WALL, 6)
                 .define('X', Items.LIGHT_BLUE_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -2039,13 +2038,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_light_blue_concrete", has(Blocks.LIGHT_BLUE_CONCRETE))
                 .save(recipeOutput, "recipe_light_blue_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.LIGHT_BLUE_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_light_blue_concrete", has(Blocks.LIGHT_BLUE_CONCRETE))
                 .save(recipeOutput, "recipe_light_blue_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_BLUE_CONCRETE_BUTTON, 1)
                 .requires(Items.LIGHT_BLUE_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_light_blue_concrete", has(Blocks.LIGHT_BLUE_CONCRETE))
@@ -2053,7 +2052,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void blueConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_STAIRS, 4)
                 .define('X', Items.BLUE_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -2061,13 +2060,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_blue_concrete", has(Blocks.BLUE_CONCRETE))
                 .save(recipeOutput, "recipe_blue_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_SLAB, 6)
                 .define('X', Items.BLUE_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_blue_concrete", has(Blocks.BLUE_CONCRETE))
                 .save(recipeOutput, "recipe_blue_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_WALL, 6)
                 .define('X', Items.BLUE_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -2076,13 +2075,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_blue_concrete", has(Blocks.BLUE_CONCRETE))
                 .save(recipeOutput, "recipe_blue_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.BLUE_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_blue_concrete", has(Blocks.BLUE_CONCRETE))
                 .save(recipeOutput, "recipe_blue_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLUE_CONCRETE_BUTTON, 1)
                 .requires(Items.BLUE_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_blue_concrete", has(Blocks.BLUE_CONCRETE))
@@ -2090,7 +2089,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void purpleConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_STAIRS, 4)
                 .define('X', Items.PURPLE_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -2098,13 +2097,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_purple_concrete", has(Blocks.PURPLE_CONCRETE))
                 .save(recipeOutput, "recipe_purple_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_SLAB, 6)
                 .define('X', Items.PURPLE_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_purple_concrete", has(Blocks.PURPLE_CONCRETE))
                 .save(recipeOutput, "recipe_purple_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_WALL, 6)
                 .define('X', Items.PURPLE_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -2113,13 +2112,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_purple_concrete", has(Blocks.PURPLE_CONCRETE))
                 .save(recipeOutput, "recipe_purple_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.PURPLE_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_purple_concrete", has(Blocks.PURPLE_CONCRETE))
                 .save(recipeOutput, "recipe_purple_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PURPLE_CONCRETE_BUTTON, 1)
                 .requires(Items.PURPLE_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_purple_concrete", has(Blocks.PURPLE_CONCRETE))
@@ -2127,7 +2126,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void magentaConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_STAIRS, 4)
                 .define('X', Items.MAGENTA_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -2135,13 +2134,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_magenta_concrete", has(Blocks.MAGENTA_CONCRETE))
                 .save(recipeOutput, "recipe_magenta_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_SLAB, 6)
                 .define('X', Items.MAGENTA_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_magenta_concrete", has(Blocks.MAGENTA_CONCRETE))
                 .save(recipeOutput, "recipe_magenta_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_WALL, 6)
                 .define('X', Items.MAGENTA_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -2150,13 +2149,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_magenta_concrete", has(Blocks.MAGENTA_CONCRETE))
                 .save(recipeOutput, "recipe_magenta_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.MAGENTA_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_magenta_concrete", has(Blocks.MAGENTA_CONCRETE))
                 .save(recipeOutput, "recipe_magenta_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_BUTTON, 1)
                 .requires(Items.MAGENTA_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_magenta_concrete", has(Blocks.MAGENTA_CONCRETE))
@@ -2164,7 +2163,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     }
 
     private void pinkConcreteRecipe(@NotNull RecipeOutput recipeOutput) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_STAIRS)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_STAIRS, 4)
                 .define('X', Items.PINK_CONCRETE)
                 .pattern("X  ")
                 .pattern("XX ")
@@ -2172,13 +2171,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_pink_concrete", has(Blocks.PINK_CONCRETE))
                 .save(recipeOutput, "recipe_pink_concrete_stairs");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_SLAB)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_SLAB, 6)
                 .define('X', Items.PINK_CONCRETE)
                 .pattern("XXX")
                 .unlockedBy("has_pink_concrete", has(Blocks.PINK_CONCRETE))
                 .save(recipeOutput, "recipe_pink_concrete_slab");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_WALL)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_WALL, 6)
                 .define('X', Items.PINK_CONCRETE)
                 .define('Y', Items.STICK)
                 .pattern(" Y ")
@@ -2187,17 +2186,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_pink_concrete", has(Blocks.PINK_CONCRETE))
                 .save(recipeOutput, "recipe_pink_concrete_wall");
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_PRESSURE_PLATE)
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_PRESSURE_PLATE, 1)
                 .define('X', Items.PINK_CONCRETE)
                 .pattern("XX")
                 .unlockedBy("has_pink_concrete", has(Blocks.PINK_CONCRETE))
                 .save(recipeOutput, "recipe_pink_concrete_pressure_plate");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_BUTTON)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.PINK_CONCRETE_BUTTON, 1)
                 .requires(Items.PINK_CONCRETE)
                 .requires(Items.REDSTONE)
                 .unlockedBy("has_pink_concrete", has(Blocks.PINK_CONCRETE))
                 .save(recipeOutput, "recipe_pink_concrete_button");
     }
-
 }
